@@ -1,0 +1,97 @@
+{
+  "trailingComma": "es5",
+  "tabWidth": 4,
+  "semi": false,
+  "singleQuote": true
+}
+
+// prettier.config.js, .prettierrc.js, prettier.config.mjs, or .prettierrc.mjs
+
+/** @type {import("prettier").Config} */
+const config = {
+  trailingComma: "es5",
+  tabWidth: 4,
+  semi: false,
+  singleQuote: true,
+};
+
+export default config;
+
+// prettier.config.js, .prettierrc.js, prettier.config.cjs, or .prettierrc.cjs
+
+/** @type {import("prettier").Config} */
+const config = {
+  trailingComma: "es5",
+  tabWidth: 4,
+  semi: false,
+  singleQuote: true,
+};
+
+module.exports = config;
+
+# .prettierrc or .prettierrc.yaml
+trailingComma: "es5"
+tabWidth: 4
+semi: false
+singleQuote: true
+
+# .prettierrc.toml
+trailingComma = "es5"
+tabWidth = 4
+semi = false
+singleQuote = true
+
+{
+  "semi": false,
+  "overrides": [
+    {
+      "files": "*.test.js",
+      "options": {
+        "semi": true
+      }
+    },
+    {
+      "files": ["*.html", "legacy/**/*.js"],
+      "options": {
+        "tabWidth": 4
+      }
+    }
+  ]
+}
+
+semi: false
+overrides:
+  - files: "*.test.js"
+    options:
+      semi: true
+  - files:
+      - "*.html"
+      - "legacy/**/*.js"
+    options:
+tabWidth: 4
+      
+{
+  "name": "my-cool-library",
+  "version": "9000.0.1",
+  "prettier": "@company/prettier-config"
+}
+
+{
+  "overrides": [
+    {
+      "files": ".prettierrc",
+      "options": { "parser": "json" }
+    }
+  ]
+}
+
+{
+  "overrides": [
+    {
+      "files": "*.js",
+      "options": {
+        "parser": "flow"
+      }
+    }
+  ]
+}
